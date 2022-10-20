@@ -1,0 +1,122 @@
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: rgb(86, 86, 109);
+}
+
+.header, .footer{
+	width: 100%;
+	padding:15px;
+	height: 70px;
+	background: repeating-linear-gradient(to top, #17CFC3 0%, #CF197A 100%);	
+}
+h1, h2{
+	font-weight: 900;
+	text-align: center;
+	font-size: 30px;
+}
+.main__container{
+	margin: 0 auto;
+	max-width: 840px;
+	box-shadow: 2px 2px 2px 5px rgb(70 70 92);
+}
+.main__practice {
+	background-color: #30a1bd;
+	width: 840px;
+	height: 3500px;
+	padding: 50px;
+}
+[class*="__body"] {
+	margin: 0 auto;
+}
+.practice__body {
+	width: 300px;
+    height: 300px;
+    background-color: rgb(14, 102, 100);
+}
+.item {
+	width: 100%;
+    height: 100%;
+    background-color: rgb(9, 192, 158);
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+	padding: 50% 0;
+	transition: all 0.3s ease;
+}
+
+.translate,
+.skale,
+.rotate, 
+.skew,
+.translate-3d, 
+.skale-3d, 
+.rotate-3d,
+.style {
+	margin-bottom: 120px;
+}
+.translate__item {
+	transform: translate(0px,0px);
+}
+.translate__item:hover {
+	transform: translate(40px,30px);
+}
+.skale__item {
+	transform: scale(0.1);
+}
+.skale__item:hover{
+	transform: scale(0.7);
+}
+.rotate__item {
+	transform: rotate(0deg);
+}
+.rotate__item:hover {
+	transform: rotate(45deg);
+}
+.skew__item {
+	transform: skew(0deg,0deg);
+}
+.skew__item:hover {
+	transform: skew(35deg,20deg);
+}
+.translate-3d__item {
+	transform: translate3d(0px,0px,0px);
+}
+.translate-3d__item:hover {
+	transform: translate3d(-30px,-40px,15px);
+}
+.skale-3d__item {
+	transform: scale3d(1,1,1);
+}
+.skale-3d__item:hover {
+	transform: scale3d(0.5,0.8,2);
+}
+.rotate-3d__item {
+	transform: rotate3d(0,0,0,0deg);
+}
+.rotate-3d__item:hover {
+	transform: rotate3d(3,30,40,60deg);
+}
+.style{
+	perspective: 400px;
+    transform-style: preserve-3d;
+}
+.style__item {
+	transform: rotateY(0deg);
+}
+.style__item:hover {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
